@@ -38,7 +38,7 @@ def classify_user_input(prompt):
 app = Flask(__name__)
 CORS(app)  
 
-@app.route('/recommend', methods=['POST']) 
+@app.route('', methods=['POST']) 
 def recommend():
     data = request.get_json()
     prompt = data.get('prompt', '').lower()
